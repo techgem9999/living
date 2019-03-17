@@ -9,4 +9,12 @@ steps{
    steps{
       sh '/opt/apache-maven-3.6.0/bin/mvn compile'
    }}
+   stage('test'){
+   steps{
+      sh '/opt/apache-maven-3.6.0/bin/mvn test'
+   }}
+   stage('package'){
+   steps{
+      sh '/opt/apache-maven-3.6.0/bin/mvn package'
+   }}
 }}
