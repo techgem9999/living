@@ -19,6 +19,6 @@ steps{
    }}
    stage('archive artifacts'){
    steps{
-      archiveArtifacts '**/*.war'
+      archiveArtifacts '**/living-1.0.0.jar'
    }}
 }}
