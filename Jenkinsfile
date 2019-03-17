@@ -13,7 +13,7 @@ steps{
    steps{
       sh '/opt/apache-maven-3.6.0/bin/mvn test'
    }}
-   stage('package'){
+   stage('package the application'){
    steps{
       sh '/opt/apache-maven-3.6.0/bin/mvn package'
    }}
