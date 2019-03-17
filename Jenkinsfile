@@ -17,4 +17,8 @@ steps{
    steps{
       sh '/opt/apache-maven-3.6.0/bin/mvn package'
    }}
+   stage('archive artifacts'){
+   steps{
+      archiveArtifacts ''
+   }}
 }}
